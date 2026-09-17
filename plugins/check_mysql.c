@@ -330,7 +330,7 @@ int main(int argc, char **argv) {
 		if (num_replicas != 1) {
 			mysql_close(&mysql);
 
-			mopl_utils_xasprintf(&sc_replica.output,
+			mopl_utils_xasprintf(&sc_replica.output, "%s",
 				num_replicas == 0
 					? (config.replica_name != NULL)
 						? no_such_named_replica
